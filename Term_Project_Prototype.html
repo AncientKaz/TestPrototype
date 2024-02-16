@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home Insurance Policy</title>
+        <link rel="stylesheet" href="prototype.css">
+    </head>
+    <body>
+        <div class="container">
+            <!--Section I: Asking for Personal Info-->
+            <h1>Section I: Personal Info</h1>
+            <form id="personalInfo" class="personal-info">
+                <!--Name Metrics-->
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" pattern="[A-Z]" placeholder="First Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="midname">Middle Name</label>
+                    <input type="text" id="midname" name="midname" pattern="[A-Z]" placeholder="(optional)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" pattern="[A-Z]" placeholder="Last Name" required>
+                </div>
+    
+                <!--Email and Number Metrics-->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phnnum">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>
+
+    <div class="buttons">
+        <button onclick="goNext()">Next Section</button>
+        <button onclick="clearAll()">Clear Form</button>
+    </div>    
+    
+
+        <!--
+            JavaScript code below, I have imported it via its 
+            own file.
+        -->
+        <script src = "prototype.js"></script>
+    </body>
+</html>

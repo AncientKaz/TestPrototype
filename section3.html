@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Section 2</title>
+    <link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+    <h1>Section III: Personal Info</h1>
+            <form id="personalInfo" class="personal-info">
+                <!--Name Metrics-->
+                <div>
+                    <label for="zip">Zip Code</label>
+                    <input type = "text" id="zipcde" name="zipcde" placeholder="Zip Code" required>
+                    <button onclick="locationFind()">Find Location</button>
+                    <div id="returnLocation"></div>
+                </div>
+            </form>
+        </div>
+
+        <div class="buttons">
+            <button onclick="goFirst()">Return to First Page</button>
+            <button onclick="goBack()">Previous Page</button>
+            <button onclick="clearAll()">Clear Form</button>
+        </div>     
+    <script src="prototype.js"></script>
+</body>
